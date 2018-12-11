@@ -1,14 +1,14 @@
 demoboot:
-  image:demoboot
+  image:  demoboot
   links:
-  -mongodb:mongo
+    -mongodb:mongo
   ports:
-  -8080:80
+    -8080:80
    
 mongodb:
-  image:mongo
+  image:  mongo
   ports:
-  - 27017
+    - 27017
   hostname: mongo
   volumes:
-  - $HOME/mongo/data/db:/data/db
+    - $HOME/mongo/data/db:/data/db
