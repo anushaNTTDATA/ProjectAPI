@@ -1,7 +1,7 @@
 demoboot:
   image:  demoboot
   links:
-    -mongodb: mongo
+    -mongodb:mongo
   ports:
     -8080:80
    
